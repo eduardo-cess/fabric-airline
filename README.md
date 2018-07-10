@@ -1,3 +1,3 @@
 # airline
 
-org.example.mynetwork
+A test project using Hyperledger Fabric
