@@ -1,0 +1,24 @@
+namespace org.acme.airline.participant 
+
+abstract participant ACMEParticipant identified by participantKey {
+  o String participantKey
+  o Contact contact 
+}
+
+participant ACMENetworkAdmin extends ACMEParticipant {
+  
+}
+
+participant ACMEPersonnel extends ACMEParticipant {
+
+}
+
+participant B2BPsaartner extends ACMEParticipant {
+
+}
+
+concept Contact {
+  o String fName
+  o String lName
+  o String email
+}
