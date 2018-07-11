@@ -6,7 +6,7 @@ asset Flight identified by flightNumber {
   o String flightNumber
   o Route route
   o String[] aliasFlightNumber
-  --> Aircraft aircraft
+  --> Aircraft aircraft optional
 }
 
 concept Route {

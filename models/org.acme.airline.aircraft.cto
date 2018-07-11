@@ -4,11 +4,12 @@ asset Aircraft identified by aircraftId {
   o String aircraftId
   o Ownership ownershipType default="LEASED"
 
-  o Integer firstClassSeats
-  o Integer businessClassSeats
-  o Integer economyClassSeats
+  o Integer firstClassSeats range = [4,]
+  o Integer businessClassSeats range = [6,20]
+  o Integer economyClassSeats range = [30,]
 
   o String nickname optional
+
 }
 
 enum Ownership {
